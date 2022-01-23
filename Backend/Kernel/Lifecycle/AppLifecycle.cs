@@ -51,12 +51,12 @@ namespace Backend.Kernel.Lifecycle
                     throw new InvalidOperationException($"Method with attribute {lifecycleAttributeType} should be static");
                 }
 
-                if (!method.GetParameters().Any())
+                if (method.GetParameters().Any())
                 {
                     throw new InvalidOperationException($"Method with attribute {lifecycleAttributeType} MUST NOT have parameters");
                 }
 
-                Logger.Debug($"Run {method.GetSignature()}");
+                Logger.Debug($"Run {method.DeclaringType?.FullName}.{method.Name}");
                 method.Invoke(null, Array.Empty<object>());
             }
         }
