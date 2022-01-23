@@ -24,13 +24,13 @@ namespace Backend.Kernel.Lifecycle
 
         public static void AppStarting()
         {
-            Logger.Info("Running AppStarting hooks");
+            Logger.Info("Run AppStarting hooks");
             RunLifecycleMethods(typeof(OnAppStartingAttribute));
         }
 
         public static void AppStarted()
         {
-            Logger.Info("Running AppStarted hooks");
+            Logger.Info("Run AppStarted hooks");
             RunLifecycleMethods(typeof(OnAppStartedAttribute));
         }
         
@@ -57,7 +57,7 @@ namespace Backend.Kernel.Lifecycle
                     throw new InvalidOperationException($"Method with attribute {lifecycleAttributeType} MUST NOT have parameters");
                 }
 
-                Logger.Debug($"Running {method.GetSignature()}");
+                Logger.Debug($"Run {method.GetSignature()}");
                 method.Invoke(null, Array.Empty<object>());
             }
         }
