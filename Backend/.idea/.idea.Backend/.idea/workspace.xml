@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="add monobehaviour singleton to access gameobject from a non-monobehaviour class">
-      <change afterPath="$PROJECT_DIR$/../Assets/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Resources/Tiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Camera.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Camera/CameraManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Camera/CameraManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ColoredTileProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ColoredTileProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ITileProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ITileProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Game.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/World/Map/Map.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/World/Map/MapLayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ColoredTileProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ColoredTileProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Backend.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +65,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Publish" type="DotNetFolderPublish" factoryName="Publish to folder">
-      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/../Assets/External" target_framework="net5.0" uuid_high="3448107304556187436" uuid_low="-7315195917578069296" />
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/../Assets/External" target_framework="net5.0" uuid_high="1292622389627996124" uuid_low="-8233933339419660985" />
       <method v="2" />
     </configuration>
   </component>
@@ -87,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642937789129</updated>
-      <workItem from="1642937798891" duration="6636000" />
+      <workItem from="1642937798891" duration="9349000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1642939346675</created>

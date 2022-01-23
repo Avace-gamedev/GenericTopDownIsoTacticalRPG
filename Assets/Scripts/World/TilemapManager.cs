@@ -4,6 +4,7 @@ using System.Linq;
 using Backend.Kernel.DependencyInjection;
 using Backend.Kernel.Lifecycle.Attributes;
 using Backend.Kernel.Logging;
+using Game.World.Map;
 using Scripts.Utils;
 using Scripts.World.Tiles;
 using UnityEngine;
@@ -35,24 +36,20 @@ namespace Scripts.World
 
             CreateGrid();
 
-            Load();
+            Load(Map.CreateDevMap());
         }
 
-        public static void Load()
+        public static void Load(Map map)
         {
             if (!_grid)
             {
                 throw new InvalidOperationException("Cannot load tilemaps before grid is created");
             }
 
-            TileBase defaultTile = TileProvider.Get("default");
-
-            Logger.Info(defaultTile ? defaultTile.ToString() : "NULL");
-
-            Tilemap tilemap = CreateTilemap();
-            tilemap.SetTile(new Vector3Int(), defaultTile);
-
-            tilemap.RefreshAllTiles();
+            foreach (MapLayer layer in map.Layers())
+            {
+                CreateTilemap(layer);
+            }
         }
 
         private static void SetupProjectSettings()
@@ -79,16 +76,39 @@ namespace Scripts.World
             _grid.cellLayout = GridLayout.CellLayout.Isometric;
         }
 
-        private static Tilemap CreateTilemap()
+        private static Tilemap CreateTilemap(MapLayer layer)
         {
             GameObject tilemapObject = _grid.gameObject.CreateChildWithComponents("Tilemap", typeof(Tilemap), typeof(TilemapRenderer));
+            tilemapObject.transform.position = new Vector3(0, 0, (float)layer.Order / 10);
+            
             Tilemap tilemap = tilemapObject.GetComponent<Tilemap>();
             _activeTilemaps.Add(tilemap);
 
             TilemapRenderer renderer = tilemapObject.GetComponent<TilemapRenderer>();
             renderer.mode = TilemapRenderer.Mode.Individual;
-            
+
+            FillTilemapFromLayer(tilemap, layer);
+
+            tilemap.RefreshAllTiles();
             return tilemap;
+        }
+
+        private static void FillTilemapFromLayer(Tilemap tilemap, MapLayer layer)
+        {
+            for (int x = 0; x < layer.Map.Width; x++)
+            for (int y = 0; y < layer.Map.Height; y++)
+            {
+                string tileName = layer.Get(x, y);
+                if (tileName == null)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), null);
+                }
+                else
+                {
+                    TileBase tile = TileProvider.Get(tileName);
+                    tilemap.SetTile(new Vector3Int(x, y, 0), tile);
+                }
+            }
         }
     }
 }
