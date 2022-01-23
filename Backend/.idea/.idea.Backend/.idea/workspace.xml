@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="setup basic architecture">
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" afterDir="false" />
+    <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="change log messages">
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/AppLifecycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/AppLifecycle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/LifecycleHookAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/LifecycleHookAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartedAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartedAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartingAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartingAttribute.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -23,9 +32,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/Attributes/LifecycleHookAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net46/.NETFramework,Version=v4.6.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net5.0/Backend.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/Attributes/OnAppStartedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Release/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/Attributes/OnAppStartingAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/AppLifecycle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/AppLifecycle.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642937789129</updated>
-      <workItem from="1642937798891" duration="2434000" />
+      <workItem from="1642937798891" duration="4520000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1642939346675</created>
@@ -72,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642940133106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change log messages">
+      <created>1642940340895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642940340895</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,7 +110,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -96,6 +132,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="update gitignore" />
     <MESSAGE value="setup basic architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup basic architecture" />
+    <MESSAGE value="change log messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="change log messages" />
   </component>
 </project>

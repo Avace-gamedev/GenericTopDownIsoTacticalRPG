@@ -2,8 +2,8 @@
 
 namespace Backend.Kernel.Lifecycle.Attributes
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public sealed class LifecycleHookAttribute: Attribute
+    [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    public abstract class LifecycleHookAttribute: Attribute
     {
     }
 }
