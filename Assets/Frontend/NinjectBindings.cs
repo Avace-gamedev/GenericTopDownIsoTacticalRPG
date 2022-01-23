@@ -9,6 +9,8 @@ namespace Frontend
         public override void Load()
         {
             Bind<ILoggerProvider>().To<UnityLoggerProvider>();
+
+            Bind<IMonoBehaviourProvider>().ToConstant(MonoBehaviourSingleton.Instance);
         }
     }
 }

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="change log messages">
+    <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="minor changes">
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/AppLifecycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/AppLifecycle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/LifecycleHookAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/LifecycleHookAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartedAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartedAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartingAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/Attributes/OnAppStartingAttribute.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642937789129</updated>
-      <workItem from="1642937798891" duration="4520000" />
+      <workItem from="1642937798891" duration="5370000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1642939346675</created>
@@ -96,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642940340895</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="minor changes">
+      <created>1642943082577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642943082577</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +144,7 @@
     <MESSAGE value="update gitignore" />
     <MESSAGE value="setup basic architecture" />
     <MESSAGE value="change log messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="change log messages" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
 </project>
