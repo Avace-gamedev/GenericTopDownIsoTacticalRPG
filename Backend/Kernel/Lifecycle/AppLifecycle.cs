@@ -33,7 +33,7 @@ namespace Backend.Kernel.Lifecycle
             Logger.Info("Run AppStarted hooks");
             RunLifecycleMethods(typeof(OnAppStartedAttribute));
         }
-        
+
         private static void RunLifecycleMethods(Type lifecycleAttributeType)
         {
             if (!lifecycleAttributeType.IsSubclassOf(typeof(Attribute)))
@@ -42,8 +42,7 @@ namespace Backend.Kernel.Lifecycle
                     $"{lifecycleAttributeType} is not an instance of {nameof(Attribute)}, it cannot be used as lifecycle attribute type");
             }
 
-            IEnumerable<MethodInfo> methods =
-                AttributesUtils.GetAllMethodsWithAttribute(lifecycleAttributeType, typeof(LifecycleHookAttribute));
+            IEnumerable<MethodInfo> methods = AttributesUtils.GetAllMethodsWithAttribute(lifecycleAttributeType);
 
             foreach (MethodInfo method in methods)
             {
@@ -52,12 +51,12 @@ namespace Backend.Kernel.Lifecycle
                     throw new InvalidOperationException($"Method with attribute {lifecycleAttributeType} should be static");
                 }
 
-                if (!method.GetParameters().Any())
+                if (method.GetParameters().Any())
                 {
                     throw new InvalidOperationException($"Method with attribute {lifecycleAttributeType} MUST NOT have parameters");
                 }
 
-                Logger.Debug($"Run {method.GetSignature()}");
+                Logger.Debug($"Run {method.DeclaringType?.FullName}.{method.Name}");
                 method.Invoke(null, Array.Empty<object>());
             }
         }

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net46</TargetFramework>
+        <AssemblyName>Backend.Game</AssemblyName>
+        <RootNamespace>Backend.Game</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Kernel\Kernel.csproj" />
+    </ItemGroup>
+
+</Project>
