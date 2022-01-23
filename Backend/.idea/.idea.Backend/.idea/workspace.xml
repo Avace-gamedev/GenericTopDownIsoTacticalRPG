@@ -2,30 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="add monobehaviour singleton to access gameobject from a non-monobehaviour class">
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/IRootGameObjectProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Utils/GameObjectExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Utils/GameObjectExtensions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/IRootGameObjectProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Lifecycle.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Lifecycle/LifecycleTriggerer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Lifecycle/LifecycleTriggerer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLogger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLogger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLogger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLoggerProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLoggerProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLoggerProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLoggerProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/World.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Resources/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Camera.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Camera/CameraManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Camera/CameraManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ColoredTileProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ColoredTileProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ITileProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/World/Tiles/ITileProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

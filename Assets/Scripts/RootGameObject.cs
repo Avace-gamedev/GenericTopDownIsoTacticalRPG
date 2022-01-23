@@ -13,7 +13,7 @@ namespace Scripts
         {
             EnsureGameObjectIsEmpty();
 
-            if (Instance == null)
+            if (!Instance)
             {
                 Instance = this;
             }
