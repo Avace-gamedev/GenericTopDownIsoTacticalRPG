@@ -1,6 +1,6 @@
 ﻿using Backend.Kernel.Logging;
 
-namespace Frontend.Logging
+namespace Scripts.Logging
 {
     public class UnityLogger : ILogger
     {

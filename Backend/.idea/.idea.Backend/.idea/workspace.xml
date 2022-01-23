@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="minor changes">
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs" afterDir="false" />
+    <list default="true" id="a423cab6-3041-4821-a095-f09ce698d910" name="Changes" comment="add monobehaviour singleton to access gameobject from a non-monobehaviour class">
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/IRootGameObjectProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Utils.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Utils/GameObjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assets/Scripts/Utils/GameObjectExtensions.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/IMonoBehaviourProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/IRootGameObjectProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Lifecycle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Lifecycle/LifecycleTriggerer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Lifecycle/LifecycleTriggerer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLogger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLogger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLoggerProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLoggerProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/Logging/UnityLoggerProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/Logging/UnityLoggerProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/MonoBehaviourSingleton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/RootGameObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/NinjectBindings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/World.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Frontend/World/TilemapManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/Scripts/World/TilemapManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kernel/Lifecycle/AppLifecycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel/Lifecycle/AppLifecycle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +51,17 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/Attributes/LifecycleHookAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net46/.NETFramework,Version=v4.6.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Assets/Frontend/NinjectBindings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net5.0/Backend.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/Attributes/OnAppStartedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Assets/Scripts/NinjectBindings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/AppLifecycle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Kernel/obj/Debug/net46/.NETFramework,Version=v4.6.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/AppLifecycle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Kernel/obj/Release/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/Attributes/OnAppStartingAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Assets/Frontend/Lifecycle/LifecycleTriggerer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/AppLifecycle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Assets/Scripts/Lifecycle/LifecycleTriggerer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lahki/unity/GenericTopDownIsoTacticalRPG/Backend/Kernel/Lifecycle/AppLifecycle.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642937789129</updated>
-      <workItem from="1642937798891" duration="5370000" />
+      <workItem from="1642937798891" duration="6636000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1642939346675</created>
@@ -107,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642943082577</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix app lifecycle">
+      <created>1642943996151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642943996151</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add monobehaviour singleton to access gameobject from a non-monobehaviour class">
+      <created>1642944010689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642944010689</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +176,8 @@
     <MESSAGE value="setup basic architecture" />
     <MESSAGE value="change log messages" />
     <MESSAGE value="minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
+    <MESSAGE value="fix app lifecycle" />
+    <MESSAGE value="add monobehaviour singleton to access gameobject from a non-monobehaviour class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add monobehaviour singleton to access gameobject from a non-monobehaviour class" />
   </component>
 </project>

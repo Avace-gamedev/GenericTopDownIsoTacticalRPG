@@ -2,7 +2,7 @@
 using Backend.Kernel.Lifecycle;
 using UnityEngine;
 
-namespace Frontend.Lifecycle
+namespace Scripts.Lifecycle
 {
     public static class LifecycleTriggerer
     {

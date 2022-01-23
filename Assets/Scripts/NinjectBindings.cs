@@ -1,8 +1,8 @@
 ﻿using Backend.Kernel.Logging;
-using Frontend.Logging;
 using Ninject.Modules;
+using Scripts.Logging;
 
-namespace Frontend
+namespace Scripts
 {
     public class NinjectBindings: NinjectModule
     {
@@ -10,7 +10,7 @@ namespace Frontend
         {
             Bind<ILoggerProvider>().To<UnityLoggerProvider>();
 
-            Bind<IMonoBehaviourProvider>().ToConstant(MonoBehaviourSingleton.Instance);
+            Bind<IRootGameObjectProvider>().ToConstant(RootGameObject.Instance);
         }
     }
 }

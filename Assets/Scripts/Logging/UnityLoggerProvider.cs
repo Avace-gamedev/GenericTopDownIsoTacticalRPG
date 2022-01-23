@@ -1,7 +1,7 @@
 ﻿using Backend.Kernel.Logging;
 using ILogger = Backend.Kernel.Logging.ILogger;
 
-namespace Frontend.Logging
+namespace Scripts.Logging
 {
     public class UnityLoggerProvider: ILoggerProvider
     {
