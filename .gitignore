@@ -41,6 +41,12 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+*.csproj
+!/Backend/**/*.csproj
+
+*.sln
+!/Backend/*.sln
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -60,3 +66,5 @@ crashlytics-build.properties
 bin
 obj
 packages
+
+Assets/External/*

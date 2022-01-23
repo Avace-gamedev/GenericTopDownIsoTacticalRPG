@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net46</TargetFramework>
+        <RootNamespace>Backend.Kernel</RootNamespace>
+        <AssemblyName>Backend.Kernel</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Ninject" Version="3.3.4" />
+    </ItemGroup>
+
+</Project>
